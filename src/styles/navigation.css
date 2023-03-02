@@ -1,0 +1,46 @@
+.active-nav {
+	@apply fixed top-0 left-0 w-full;
+}
+
+nav > #navigationBody {
+	@apply z-50 flex flex-row items-center justify-between py-3 px-5 transition-all duration-300 md:px-10;
+}
+
+.onscroll-active {
+	@apply bg-light bg-opacity-5 shadow-lg shadow-dark backdrop-blur-xl;
+}
+
+nav > #navigationBody > a {
+	@apply bg-gradient-to-br from-primary to-primary/80 bg-clip-text text-2xl font-bold text-transparent md:text-3xl lg:text-4xl;
+}
+
+nav > #navigationBody > div:nth-child(2) {
+	@apply flex cursor-pointer flex-col gap-2 md:hidden;
+}
+
+nav > #navigationBody > div:nth-child(2) > div {
+	@apply aspect-auto h-[2px] w-[30px] bg-light;
+}
+
+/* hamburger actived */
+.hamburger-active > div:nth-child(1) {
+	@apply origin-top-left rotate-45;
+}
+.hamburger-active > div:nth-child(2) {
+	@apply opacity-0;
+}
+.hamburger-active > div:nth-child(3) {
+	@apply origin-bottom-left -rotate-45;
+}
+
+nav > #navigationBody > div:nth-child(3) {
+	@apply absolute right-16 top-4 z-50 w-40 flex-col justify-start gap-1 rounded-lg bg-light px-3 py-2 shadow-lg shadow-dark/70 md:static md:flex md:w-auto md:flex-row md:gap-4 md:bg-transparent md:px-0 md:py-0 md:shadow-none;
+}
+
+.active-link {
+	@apply text-lg font-bold text-primary transition-all duration-300;
+}
+
+.inactive-link {
+	@apply text-lg font-medium text-dark transition-all duration-300 md:text-light;
+}

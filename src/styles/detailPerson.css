@@ -1,0 +1,31 @@
+.detail-person {
+	@apply container py-20;
+}
+
+.detail-person > div {
+	@apply flex flex-col items-center justify-center gap-10 md:flex-row md:gap-20;
+}
+
+.detail-person > div > div:nth-child(1) {
+	@apply flex select-none flex-col items-center md:w-1/2 md:max-w-[50%];
+}
+
+.detail-person > div > div:nth-child(1) > img {
+	@apply h-[200px] w-[200px] rounded-t-3xl bg-light md:h-[300px] md:w-[300px];
+}
+
+.detail-person > div > div:nth-child(1) > p {
+	@apply w-[200px] rounded-b-3xl bg-light px-2 pb-4 text-center text-3xl font-bold tracking-widest text-dark md:w-[300px];
+}
+
+.detail-person > div > div:nth-child(2) {
+	@apply flex flex-col gap-3 md:w-1/2 md:max-w-[50%];
+}
+
+.detail-person > div > div:nth-child(2) > p {
+	@apply text-base font-medium tracking-wide md:text-lg xl:text-xl;
+}
+
+.detail-person > div > div:nth-child(2) > p > span {
+	@apply text-primary;
+}

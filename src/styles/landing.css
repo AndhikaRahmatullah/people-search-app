@@ -1,0 +1,15 @@
+.landing {
+	@apply flex min-h-screen flex-col items-center justify-center;
+}
+
+.landing > p {
+	@apply bg-gradient-to-br from-primary via-primary/70 to-primary bg-clip-text text-4xl font-extrabold uppercase tracking-widest text-transparent md:text-7xl lg:text-8xl;
+}
+
+.landing > div > p {
+	@apply w-[300px] text-center text-base font-extralight md:w-[700px] md:text-xl lg:w-full;
+}
+
+.landing > button {
+	@apply rounded-lg bg-primary/70 p-[6px] text-sm font-medium tracking-wider transition-all duration-300 hover:bg-primary md:p-2 md:text-base lg:mt-10;
+}

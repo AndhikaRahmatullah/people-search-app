@@ -1,0 +1,48 @@
+.home {
+	@apply container py-20;
+}
+
+.home > form {
+	@apply flex flex-col gap-5;
+}
+
+.home > form > div:nth-child(1) > label {
+	@apply mb-1 block text-lg;
+}
+
+.home > form > div:nth-child(1) > span {
+	@apply ml-1 font-light text-primary;
+}
+
+.home > form > div:nth-child(2) {
+	@apply flex flex-col items-center gap-2;
+}
+
+.home > form > div:nth-child(2) > button {
+	@apply w-fit rounded-lg bg-primary/70 p-2 text-base font-medium tracking-wider transition-all duration-300 hover:bg-primary;
+}
+
+.home > form > div:nth-child(2) > span {
+	@apply cursor-pointer text-sm font-light underline decoration-transparent transition-all duration-300 hover:text-primary hover:decoration-primary;
+}
+
+.home > div {
+	@apply mt-10 flex justify-center;
+}
+
+.home > div > .card {
+	@apply flex w-[500px] flex-col items-center justify-center rounded-lg bg-light py-5;
+}
+
+.home > div > .card > p:nth-child(1) {
+	@apply text-2xl font-bold tracking-wider text-primary;
+}
+
+.home > div > .card > p:nth-child(3),
+.home > div > .card > p:nth-child(4) {
+	@apply font-normal tracking-wide text-dark;
+}
+
+.home > div > .card > a {
+	@apply mt-4 rounded-lg bg-primary p-2 text-base font-medium tracking-wider transition-all duration-300 hover:bg-primary/70;
+}
